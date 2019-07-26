@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-07-26T01:25:23.380Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archive/index.html</loc>
+    
+    <lastmod>2019-07-26T01:24:26.789Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-07-26T01:24:03.846Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-07-26T01:23:09.211Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/07/26/fight/</loc>
     
-    <lastmod>2019-07-26T01:09:21.915Z</lastmod>
+    <lastmod>2019-07-26T01:13:45.294Z</lastmod>
     
   </url>
   
