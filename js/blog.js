@@ -57,7 +57,7 @@
 		// TODO 不用jqueryUI
 		that.parents('.panel').animate({
 			opacity: 0
-		}, 1000, function () {
+		}, 10000, function () {
 			$(this).css('display', 'none')
 			// $(this).css('opacity', 1)
 		})
