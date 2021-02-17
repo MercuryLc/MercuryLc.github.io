@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2021-02-11T05:16:07.758Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2021/02/11/HappyNewYear/</loc>
     
     <lastmod>2021-02-11T04:54:11.011Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2019/07/26/newStartDay/</loc>
     
     <lastmod>2019-07-26T14:07:35.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2019-07-26T01:25:23.380Z</lastmod>
     
   </url>
   
