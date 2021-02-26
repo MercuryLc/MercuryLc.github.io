@@ -1,818 +1,437 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Mercury_Lc">
-    
-    
-    
-    
-    
-    
-    <title>Hexo</title>
-    <link href="”http://yoursite.com“" rel="”prefetch”">
+  <meta charset="utf-8">
+  
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/aos.css">
-<link rel="stylesheet" href="/css/style.css">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/aos.js"></script>
-    <script src="/js/highslide/highslide-full.min.js"></script>
-    <link rel="stylesheet" href="/js/highslide/highslide.css">
-    <style type="text/css">
-        @media (max-width: 768px) {
-            body {
-                background-color: #f0f0f0;
-                background: url('/imgs/xsbg.gif');
-                background-attachment: fixed;
-            }
-        }
-    </style>
-    
-    <!--<script type="text/javascript">
-      if (document.images) {
-        var avatar = new Image();
-        avatar.src = '/imgs/5201.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
-        var previewsPreLoad = []
-        for(var i = 0; i < length; i++) {
-          previewsPreLoad.push(new Image())
-          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
-        }
-      }
-    </script>-->
-</head></html>
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
 <body>
-    <!-- 背景轮播图功能 -->
-    <section class="hidden-xs">
-    <ul class="cb-slideshow">
-        <li><span>天若</span></li>
-        <li><span>有情</span></li>
-        <li><span>天亦老</span></li>
-        <li><span>我为</span></li>
-        <li><span>长者</span></li>
-        <li><span>续一秒</span></li>
-        <li><span>1</span></li>
-        <li><span>2</span></li>
-        <li><span>3</span></li>
-        <li><span>4</span></li>
-    </ul>
-</section>
-
-    <!-- 欧尼酱功能, 谁用谁知道 -->
-    
-    <header class="navbar navbar-inverse" id="gal-header">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target=".bs-navbar-collapse"
-                    aria-expanded="false">
-                <span class="fa fa-lg fa-reorder"></span>
-            </button>
-            <a href="http://yoursite.com">
-                
-                <style>
-                    #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
-                    }
-                </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Hexo</div>
-                
-            </a>
-        </div>
-        <div class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav" id="menu-gal">
-                
-                
-                <li class="current">
-                    <a href="/">
-                        <i class="fa fa-home"></i>首页
-                    </a>
-                </li>
-                
-                
-                
-                <li class="">
-                    <a href="/archives">
-                        <i class="fa fa-archive"></i>归档
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li class="">
-                    <a href="/categories">
-                        <i class="fa fa-list"></i>分类
-                    </a>
-                </li>
-                
-                
-                
-                
-                
-                <li class="">
-                    <a href="/tags">
-                        <i class="fa fa-tags"></i>标签
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li class="">
-                    <a href="/about">
-                        <i class="fa fa-user"></i>关于我
-                    </a>
-                </li>
-                
-                
-            </ul>
-        </div>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
     </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
 </header>
-    <div id="gal-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 gal-right" id="mainstay">
-                    
-<div class="alert well fade in" id="gal-issue" role="alert">
-    <!-- TODO 添加关闭公告框功能 -->
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <!-- 这里自行配置公告内容 -->
-    众星捧月。
-    <!-- 自行配置公告内容结束 -->
-</div>
-
-
-<div id="article-list">
-     
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-2021小目标" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/02/26/2021小目标/" class="article-date">
+  <time datetime="2021-02-26T15:43:44.000Z" itemprop="datePublished">2021-02-26</time>
+</a>
     
-    <div class="data-article hidden-xs">
-        <span class="month">02月</span>
-        <span class="day">26</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2021/02/26/2021小目标/">
-                    <span>2021小目标</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2021/02/26/2021小目标/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2021/02/26/2021小目标/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview3.jpg" alt="2021小目标">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2021/02/26/2021小目标/">
-                        <span>2021小目标</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2021-02-26
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2021/02/26/2021小目标/">
-                    
-                    <img src="/imgs/preview/preview2.jpg" alt="2021小目标">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2021/02/26/2021小目标/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+  </div>
+  <div class="article-inner">
     
-    <div class="data-article hidden-xs">
-        <span class="month">02月</span>
-        <span class="day">11</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2021/02/11/HappyNewYear/">
-                    <span>HappyNewYear</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2021/02/11/HappyNewYear/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2021/02/11/HappyNewYear/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="HappyNewYear">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2021/02/11/HappyNewYear/">
-                        <span>HappyNewYear</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2021-02-11
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2021/02/11/HappyNewYear/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="HappyNewYear">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2021/02/11/HappyNewYear/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
     
-    <div class="data-article hidden-xs">
-        <span class="month">02月</span>
-        <span class="day">09</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2021/02/09/hello-world/">
-                    <span>Hello World</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2021/02/09/hello-world/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2021/02/09/hello-world/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview2.jpg" alt="Hello World">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2021/02/09/hello-world/">
-                        <span>Hello World</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2021-02-09
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2021/02/09/hello-world/">
-                    
-                    <img src="/imgs/preview/preview2.jpg" alt="Hello World">
-                </a>
-            </p>
-        </div>
+      <header class="article-header">
         
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2021/02/09/hello-world/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/26/2021小目标/">2021小目标</a>
+    </h1>
+  
+
+      </header>
     
-    <div class="data-article hidden-xs">
-        <span class="month">08月</span>
-        <span class="day">13</span>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="2021-年小目标"><a href="#2021-年小目标" class="headerlink" title="2021 年小目标"></a>2021 年小目标</h3><h5 id="半年期"><a href="#半年期" class="headerlink" title="半年期"></a>半年期</h5><p>希望达成以下目标：</p>
+<p>1、新媒体，真的很爱</p>
+<p>2、毕业设计</p>
+<p>3、驾照</p>
+<p>4、毕业旅行？</p>
+<p>5、挣第一桶金？</p>
+<p>6、读两本书</p>
+<p>7、英语六级（丢人</p>
+<p>8、网站建设？</p>
+<p>9、未来规划啊？</p>
+<h6 id="2021-6-1-来检验"><a href="#2021-6-1-来检验" class="headerlink" title="2021 - 6 - 1 来检验"></a>2021 - 6 - 1 来检验</h6>
+      
     </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2019/08/13/Hope-初心/">
-                    <span>Hope-初心</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2019/08/13/Hope-初心/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2019/08/13/Hope-初心/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview3.jpg" alt="Hope-初心">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2019/08/13/Hope-初心/">
-                        <span>Hope-初心</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2019-08-13
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2019/08/13/Hope-初心/">
-                    
-                    <img src="/imgs/preview/preview1.jpg" alt="Hope-初心">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2019/08/13/Hope-初心/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/02/26/2021小目标/" data-id="cklmhtvhx0001ckuglvubwd43" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HappyNewYear" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/02/11/HappyNewYear/" class="article-date">
+  <time datetime="2021-02-11T04:52:30.000Z" itemprop="datePublished">2021-02-11</time>
+</a>
     
-    <div class="data-article hidden-xs">
-        <span class="month">07月</span>
-        <span class="day">26</span>
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/11/HappyNewYear/">HappyNewYear</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>新的一年，永远年轻快乐~</p>
+
+      
     </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2019/07/26/newStartDay/">
-                    <span>newStartDay</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2019/07/26/newStartDay/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2019/07/26/newStartDay/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview3.jpg" alt="newStartDay">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2019/07/26/newStartDay/">
-                        <span>newStartDay</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2019-07-26
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2019/07/26/newStartDay/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="newStartDay">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2019/07/26/newStartDay/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-</div>
-<!-- 前方最多7个 < 1 2 3 4 5 6 -->
-<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
-
-<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
-<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/02/11/HappyNewYear/" data-id="cklmhtvi30002ckug8d7nzhpm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/02/09/hello-world/" class="article-date">
+  <time datetime="2021-02-09T09:05:32.709Z" itemprop="datePublished">2021-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/09/hello-world/">Hello World</a>
+    </h1>
+  
 
-<div id="gal-pagination" class="clearfix">
-    <ul class="pagination pagination-gal pull-right">
-        
-        
-        
-        
-        <li class="current">
-            <span>1</span>
-        </li>
-        
-        
-        
-        
-    </ul>
-</div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-                </div>
-                <aside class="col-md-4 gal-left" id="sidebar">
-    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
-<aside id="sidebar-search">
-    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <form class="form-inline clearfix" id="search-form" method="get"
-              action="/search/index.html">
-            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
-            <button class="btn btn-danger btn-gal" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/02/09/hello-world/" data-id="cklmhtvii0004ckug254c0cvy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Hope-初心" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/13/Hope-初心/" class="article-date">
+  <time datetime="2019-08-13T06:11:45.000Z" itemprop="datePublished">2019-08-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/13/Hope-初心/">Hope-初心</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="返校记"><a href="#返校记" class="headerlink" title="返校记"></a>返校记</h4><blockquote>
+<p>这算是对之前在家的承诺的一个兑现吧。</p>
+<p>在家里偶尔看到了xhl发的一个说说被感触到了所以想写一点东西，不过一会忙点这个，一会忙点那个，就滞待了，现在在学校里，窗外的雨稀里哗啦的，思绪早已经飘到了遥远的地方，已无心去盯着电脑，索性来完成当时未完成的东西。</p>
+<p>还记得当时那句话：哪有什么所谓的天才，还不都是孤独地翻山越岭。</p>
+</blockquote>
+<blockquote>
+<p>刚刚读到这句话时候，能够清楚到感知到浑身的某一个毛孔都在呼吸，一股子的干劲和热心涌上来，谁还不是一个人在谷底挣扎！可能是因为读的书越来越少，所以就算是一句平常多见的鸡汤，也能让自己猛然间在迷茫模糊之间惊醒，从不把艰难放在眼里，那种傲视的感觉也随之而来。</p>
+</blockquote>
+<blockquote>
+<p>看似每一点的小小进步，其实背后付出的努力，是别人没有办法想像到的，只有经历过才有资格来诉说，只有经历过才有资格在以后说出不后悔。</p>
+</blockquote>
+<blockquote>
+<p>感觉自己总是给自己找各种各样的理由来说服自己，生怕别人知道这件事情其实很简单，只是自己的能力不足而已，所以当懒惰赖床的心理遇见锻炼腹肌的你时，就会把后面的你扔的一干二净，当明明马上就可以完成的任务遇见能拖就拖的你时，你毫不犹豫地选择了后者。这只是一部分的表现，有自制力的人会去坚持。</p>
+</blockquote>
+<blockquote>
+<p>打开 keep，你会看见醒目的几个字：自律给我自由。没有自律哪里来的自由，因为没有自律，你就变得很随性，看似每一天都活的很自由，其实什么都没有做，只是碌碌无为的活着，就这样一天一天的熬着，体会不到紧张的学习、体会不到大汗淋漓的健身、体会不到一丝不苟的做事、体会不到很多很多可以让你找到价值的东西。只有自律，才能更大限度让自己感受到自由，才能去实现更多自己想要实现的东西，才能变得更加靠近自己的梦想。</p>
+</blockquote>
+<blockquote>
+<p>说到价值一词，三观不同，价值体现的就不同，这里是指的个人感受到的。那一个人存在一定要有价值嘛？额，这可能是一个很严肃的问题，也是一个很难说明白的问题。就如同哲学界的那几个终极问题一样，没办法给你很明确的答案吧。因为每个人对这个理解不同，所以认为的价值也不一样，确切的说就算有人认为人存在简简单单活一辈子就好了，为什么非要去实现什么伟大的事业，去发挥自己的价值，那么这个人，简简单单的活着，也是在以另一种形式来实现自己的价值。</p>
+</blockquote>
+<blockquote>
+<p>不过我个人认为，某一种意义上的价值就是无法让人遗忘吧。</p>
+</blockquote>
+<blockquote>
+<p>也记不清是哪一年哪个岁月看到亦或听到，人如果被遗忘了，那就是没有存在过吧，即使人没有死去，任何人都不记得有这么一个人，那一定是一件很痛苦的事情吧。</p>
+</blockquote>
+<blockquote>
+<p>在来的路上，我一直在想，生活在这里到底是为了什么，是正常毕业，顺利考研，还是找个工作养家糊口，这些都是以后的选择，也是不得不面对的选择，无法逃避，或者你可以拖延，但终将会降临在你的面前。可这些东西与活着相比，却又显得那么微不足道。</p>
+</blockquote>
+<blockquote>
+<p>活着，有时候真的很累，死者或者更轻松一些，但是我想说，如果你还有的选择，哪怕是除了死之外的任何艰难的事情，也别轻易把自己的生命交出去，因为死去了，就一点机会都没有了。</p>
+</blockquote>
+<blockquote>
+<p>很多人都在拼命的活着，哪怕是那些每天上街乞讨的人，都在想着自己那一天可以摆脱这种生活，过的好一点，那你如果没有沦落到乞讨的地步，又有什么理由轻视生命呢！老父亲是个农村长大的孩子，上过几年学，对我说过的比较多的一句话就是：”能上好学就尽量上好学“。现如今年龄也大了，给我的感觉也是有些稳重的年长者了，在送我去车站路上一句也没有多说，只是叮嘱我一句：“要好好上学，缺什么问家里要就行”。在进站的那一刻，我又不自觉的转身想拥抱一下他，没想看到是他用手急忙抹掉眼边的泪水，微笑转眼就挂在了嘴角处，可那不是骗人的嘛，明明眼睛那么红润。一句注意身体，我便匆匆转身离去，生怕再让多让他看两眼，进站坐下之后，泪水便止不住的流出来，兴许是很久没有哭泣过，一点也控制不住自己。</p>
+</blockquote>
+<blockquote>
+<p>在换乘等车时，又偶遇一个中年大叔带着一个耳机在哪视频电脑，火车快要来了，站台的人很多很多，这个大叔还在那里晃晃荡荡，生怕地方很多被别人抢去，但又显得那么不自然，他可能感觉到不好意思，边回头边在嘴里嘟嘟着什么，不经意间，在视频的另一边应该是大叔的妻子吧，哭的好像都不能自理了，我那一刻真的深刻的感受到，原来这世间的生离有时比死别还要伤心难过那么多。</p>
+</blockquote>
+<blockquote>
+<p>一路上，火车慢慢悠悠的走着，我还停留在那个状态没有回过神来，觉得人真的好神奇，这世界真的好神奇，感情这种让人无法看透的东西，总会给你带来从未想过感觉。</p>
+</blockquote>
+<blockquote>
+<p>到学校了一天了，不是那么想家，因为习惯的原因吧。</p>
+</blockquote>
+<blockquote>
+<p>一切都在路上，在奔跑中，会感受到风的声音，便少了些离别的哭泣。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/13/Hope-初心/" data-id="cklmhtvi50003ckugcapjj2tq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-newStartDay" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/26/newStartDay/" class="article-date">
+  <time datetime="2019-07-26T12:55:16.000Z" itemprop="datePublished">2019-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/26/newStartDay/">newStartDay</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>忙忙碌碌了两天终于搞好了，虽然以前搞过一次，但是给弄没了，当时只是觉得好玩而已，现在想把自己的一些感悟啦或者好玩的东西放到这里，当然可能还是以<a href="https://blog.csdn.net/mercury_lc" target="_blank" rel="noopener">csdn</a>为主要吧，<!--虽然博客将近有好几个月没更新了，因为各种原因啦，比如xxx针对xx学生，导致xx科严重掉线，差点没死掉。因此得到了一个小小的算是教训吧,不要认为你付出就有回报，尤其面对xx一样的人物，你没办法，真是哭了。-->有好玩的，可能影响市容就是发泄自己的心情的就放在这里啦，如果你是一位访客，来到了这里的话，欢迎你呀，常来玩。</p>
+<p>给自己立个Flag：</p>
+<blockquote>
+<p>在未来的6个月，学会该学的内容，其中包括你的各种课程啦，英语啦！</p>
+<p>认真复习学习英语</p>
+<p>永远不要放弃</p>
+<p>克制自己</p>
+</blockquote>
+<p>希望自己能够因为这次的失误变得更加敏锐，能够更好地处理好各种突发事故，看过一则新闻还是消息，忘记了，大概的意思是：一件事情发生自己身上，一开始无论是一件好事还是坏事，都没有影响，这只是刚刚开始的时候，结果的好坏绝大多数取决于当事者是怎么处理这件事，又是以什么样的心态去做的。</p>
+<p>今天突然地发现，自己已经走了好远好远，以至于都不清楚了自己想要什么了，失去了一开始的目标的方向，在你人生的低谷期或者是你认为的人生的低谷期，如果有人陪着你，有人愿意去理解你，可能当时你不会发现，可是当挺过去之后，倘若是一个心存良知的人，那么他一定会感觉到很幸福，因为在绝望的时候给你了希望的不是什么遥不可及的目标也不是自己一直坚持的信仰，那可能仅仅是有一个愿意听你说话的人，愿意帮你分担愁苦的人。</p>
+<p>你不能改变的有很多很多。你作为工人，你不能决定那天休工。你作为患者，你不能决定医疗费用。你作为学生，你不能决定老师的想法……其实这些对当时的你来说，有的很重要，有的不重要，关键看你扮演的角色是什么，或者说是你当前扮演的角色的重要程度。</p>
+<h6 id="有些东西不能改变，那么就去改变自己。"><a href="#有些东西不能改变，那么就去改变自己。" class="headerlink" title="有些东西不能改变，那么就去改变自己。"></a>有些东西不能改变，那么就去改变自己。</h6><p>这或许是你听见很常见的一句“安慰”你的话了，然后举出各种XX很厉害很成功的例子，然后你听了之后也觉得xxx说的对，是我自己做错了，我应该努力改变自己。然后三分钟热度上头，然后就没有然后了。因为你没办法有那么强的自制力，没有办法彻彻底底的改变自己，所以开始沉沦，这也是没办法，反正就这个样子了，短时间内又不会损失什么，然后开始安慰自己，虽然改变自己是对的，但是不改变我也没少啥啊，我不需要那么厉害，对，就这样子。然后一生就结束了。</p>
+<p>其实第一点，那句话也不是很多时候都是对的，我觉得也就是一半一半吧。五五开的样子。因为每个人的看法不同，眼界不同，思维不同，那么结果肯定不同，就像说的那样，你认为飞流瀑布，波澜壮阔是美景，那幽静绿林，小桥茅屋也是美景啊。虽然结果不同，但是各有各的特点，所以也不必那么的改变自己，或许，现在的自己挺好的，只是少了点大起大落嘛，这完全看个人喜好啦，没有必要非要强求自己去干一件别人都干的事情，怕自己落下什么东西，那样挺浪费时间和精力的。</p>
+<p>第二点，但是也不能抱着万物皆错唯我对的思想，因为你尚且年轻不知世间险恶，呸，世间繁杂，有好的东西不是你看到的那样子的啦。有言道：年轻人，还需要多长长见识啊。不要看山是山，见水是水。嗯，但是也要看山是山，见水是水。后者嘛，活久了再领悟吧。</p>
+<h6 id="长久的安逸会让一个人丧失掉战斗力，时刻让自己处于一种活跃的状态。"><a href="#长久的安逸会让一个人丧失掉战斗力，时刻让自己处于一种活跃的状态。" class="headerlink" title="长久的安逸会让一个人丧失掉战斗力，时刻让自己处于一种活跃的状态。"></a>长久的安逸会让一个人丧失掉战斗力，时刻让自己处于一种活跃的状态。</h6><p>现在的大学生，不是针对啥，只是说一下身边的现状，毕业后找不到工作的一大把一大把的，然后好多还心态爆炸的那种，乱七八糟的，那还不是因为在大学的长久安逸，让他们失去了年轻人应该有的斗志和活力，每天中午起床打开手机定个外卖，问问有没有点名，帮忙点个到，打开新更的番，刷会视频娱乐，玩会游戏，晚上熬夜到下半夜，偶尔心血来潮去上一节课，在宿舍艰难的看会书，最后打个突击战，问这个问那个，抱着能够“吻过”的心理，考前拼了命的复习，立各种Flag，下学期一定好好做人……一学期下来，知识没涨多少，黑眼圈多了好几圈，胖的没瘦下来，瘦的越来越消瘦，看起来像吸了xx似的，xu~。</p>
+<p>不过你问他为啥不努力啊，为啥不好好干啊。诸如之类的东西，嗯，他会说，我也想啊，可是学不会啊！我也想啊，可是这个东西看不懂啊！我也想啊，可是我一开始就落下了啊！</p>
+<p>嗯，我默默地放弃了自己的好奇心。</p>
+<p>一个人走在路上，孤单但是不曾感到害怕。</p>
+<h6 id="童话是最可怕的！pei，同化是最可怕的！"><a href="#童话是最可怕的！pei，同化是最可怕的！" class="headerlink" title="童话是最可怕的！pei，同化是最可怕的！"></a>童话是最可怕的！pei，同化是最可怕的！</h6><p>你还记得的彼得潘的鼻子嘛，你还记得白雪公主和七个小矮人嘛，你还记得睡美人嘛……长大了，距离那些童话越来越远，不是说你接触不到了，是说你的心灵越来越被世俗给浑浊了。</p>
+<p>如果你经历过因为周边的环境而改变了自己，那你就应该考虑一下，这是我自己做出的改变，还是周围的环境把我同化掉了。你还是那个一开始来到某个大学，来到某个公司，来到某个单位的你嘛。我一定要通过自己的坚持不懈的努力改变自己，不要再像以前那样子，加油吧。一段时间过去了，你发现，稍微可以放松点，有一段时间过去了，你发现，自己好像不需要那么累着自己，反正周围的人也都是这个样子，又一段时间过去了，你可能就没再去发现什么了，因为你已经变成了这里的一部分，你习以为常了，哪还有什么奋斗的少年啥的，早就不知道跑哪里去了。</p>
+<p>同化可能是第一次翘掉某些课程，也可能是逃避掉某些现实等等，一次的开始就会让你的身体爱上这种懒散，从而变本加厉的来索取这种状态。<!--当然，这里需要说明的是，我所说的同化，是指的不好的那一面，好的一面是在良好的环境下受到熏陶，是言传身教的传统美德等等。--></p>
+<p>希望你能够告别同化，因为总有一次的翻车，会让你知道疼痛，希望你不会一边喊着疼，一边坐以待毙。</p>
+<h6 id="整装待发，才是你应该有的状态。"><a href="#整装待发，才是你应该有的状态。" class="headerlink" title="整装待发，才是你应该有的状态。"></a>整装待发，才是你应该有的状态。</h6><p>一不小心，手没有刹住，就口胡了这么多的东西，还是觉得我当初要是选择了文科，该是多么的潇洒，不过相比而知，还是喜欢理性的思维。这不仅有趣，而且总会找到一些好玩的东西，总之不会让自己无聊啦。</p>
+<p>不管你现在怎么样子，请你整理好自己的衣襟，调整好自己的状态，朝着自己的理想彼岸一点点的前行，不要沉迷于路边不安稳的风景。</p>
+<p>或许你会认为，我写这些是站在了道德的顶层来批判来要求别人，我根本没有经历过这种事情，又怎么体会到你的感觉，你的心情。好吧，其实这里面有一些误解吧，我并没有站在一个道德的制高点说这说那，也没有强制你让你非要脱离目前的生活状态，也只是说，如果你愿意，你可以尝试去改变一下，我也只是一个普普通通的人，读的书一只手都可以数的过来，我也在经历着各种的不公平，各种的低谷期，可是，如果你一个人的话，为什么不试一试改变一下呢，万一让自己也爱上了自己呢。没有人可以一帆风顺，也没有人可以一直对下去，只要不认输，好多都可以改变的。</p>
+<p>再者我想说的是，你不愿意去听，不愿意去接受改变自己，也不接受别人的建议，当然可以呀，也没有人非要去逼你干什么事情，抢劫之类的另说，只是说这么做比较的好一些，不愿意的话，当然是去追寻自己的梦世界，希望每个人都能找到自己的家，实现自己的梦。</p>
+<!--以下是2019年3月25日的备份材料，因为Hexo重新搭建，所以保存了仅剩一份文件-->
+
+<p><strong>感谢这款主题的作者，在此基础上我可以搞一些其他的东西，如有侵权事件，立即删除。</strong></p>
+<p>第一次使用纯净的Markdown写东西，也不是很熟练的用这个东西。尤其是涉及到各种比如斜体啦，标题了，全部都要去想好一会，额，我觉得写自己学的东西还是用<a href="https://blog.csdn.net/mercury_lc" target="_blank" rel="noopener">csdn</a>好了，这个就当是自己的另一个小家了，虽然现在的主题down过来了，但是毕竟是属于自己的第一个Hexo，还是要好好珍惜的。</p>
+<p>其他的就等到慢慢的去实现去把这个改成到自己了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/26/newStartDay/" data-id="cklmhtvix0008ckug0bgmvo2o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/02/26/2021小目标/">2021小目标</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/11/HappyNewYear/">HappyNewYear</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/09/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/13/Hope-初心/">Hope-初心</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/26/newStartDay/">newStartDay</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
 </aside>
-    <aside id="sidebar-author">
-    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
-        <div class="panel-heading" style="text-align: center">
-            <i class="fa fa-quote-left"></i>
-            Mercury_Lc
-            <i class="fa fa-quote-right"></i>
-        </div>
-        <div class="author-panel text-center">
-            <img src="/imgs/5201.jpg" width="140" height="140"
-                 alt="个人头像" class="author-image">
-            <p class="author-description"></p>
-        </div>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 Mercury_Lc<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-</aside>
-    
-    <aside id="sidebar-recent_comments">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-comments"></i>
-            最新评论
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush"></ul>
-    </div>
-</aside>
-    
-    <!-- 要配置好leancloud才能开启此小工具 -->
-    
-    
-    <aside id="sidebar-recent_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            近期文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/26/2021小目标/">2021小目标</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/11/HappyNewYear/">HappyNewYear</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/09/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/08/13/Hope-初心/">Hope-初心</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/07/26/newStartDay/">newStartDay</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="sidebar-rand_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            随机文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/26/2021小目标/">2021小目标</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/08/13/Hope-初心/">Hope-初心</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/11/HappyNewYear/">HappyNewYear</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/02/09/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/07/26/newStartDay/">newStartDay</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="gal-sets">
-        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-            <ul class="nav nav-pills pills-gal">
-
-                
-                <li>
-                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
-                </li>
-                
-            </ul>
-            <div class="tab-content">
-                
-                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
-    
-</div>
-                
-                
-                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
-    
-    <li>
-        <a href="" target="_blank">nofriends</a>
-    </li>
-    
-    <li>
-        <a href="MercuryLc.github.io" target="_blank"></a>
-    </li>
-    
-</div>
-                
-                
-                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
-    
-    <li>
-        <a href="https://github.com/MercuryLc" target="_blank">Github</a>
-    </li>
-    
-    <li>
-        <a href="https://blog.csdn.net/Mercury_Lc" target="_blank">CSDN</a>
-    </li>
-    
-</div>
-                
-            </div>
-        </div>
-    </aside>
-    
-</aside>
-            </div>
-        </div>
-    </div>
-    <footer id="gal-footer">
-    <div class="container">
-        Copyright © 2019 Mercury_Lc Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
-    </div>
+  </div>
 </footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
-<!-- 回到顶端 -->
-<div id="gal-gotop">
-    <i class="fa fa-angle-up"></i>
-</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
 </body>
-<script src="/js/activate-power-mode.js"></script>
-<script>
-
-    // 配置highslide
-	hs.graphicsDir = '/js/highslide/graphics/'
-    hs.outlineType = "rounded-white";
-    hs.dimmingOpacity = 0.8;
-    hs.outlineWhileAnimating = true;
-    hs.showCredits = false;
-    hs.captionEval = "this.thumb.alt";
-    hs.numberPosition = "caption";
-    hs.align = "center";
-    hs.transitions = ["expand", "crossfade"];
-    hs.lang.number = '共%2张图, 当前是第%1张';
-    hs.addSlideshow({
-      interval: 5000,
-      repeat: true,
-      useControls: true,
-      fixedControls: "fit",
-      overlayOptions: {
-        opacity: 0.75,
-        position: "bottom center",
-        hideOnMouseOut: true
-      }
-    })
-
-    // 初始化aos
-    AOS.init({
-      duration: 1000,
-      delay: 0,
-      easing: 'ease-out-back'
-    });
-
-</script>
-<script>
-	POWERMODE.colorful = 'true';    // make power mode colorful
-	POWERMODE.shake = 'true';       // turn off shake
-	// TODO 这里根据具体情况修改
-	document.body.addEventListener('input', POWERMODE);
-</script>
-<script>
-    window.slideConfig = {
-      prefix: '/imgs/slide/background',
-      ext: 'jpg',
-      maxCount: '10'
-    }
-</script>
-<script src="/js/hs.js"></script>
-<script src="/js/blog.js"></script>
-
-
-
 </html>
